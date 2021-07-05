@@ -36,10 +36,10 @@
 		rgb_layer {
 // ------------------------------------------------------------------------------------------------
 // | BT CLR | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10  | F11 | F12 | EFFECT REV |
-// |  BT 1   |   |  UP |   | HUEUP | SATUP | BRIUP | SPDUP |   |     |    |     |     |           |
-// |   BT 2   | LT |  DN  | RT | HUEDN | SATDN | BRIDN | SPDDN |   |     |   |     |  EFFECT FORW |
-// |    BT 3     |     |      |      |     |     |     |     |     |     |     |                  |
-// |   BT 4  |      |      |             TOG RGB                | PRT SCR |       |       |  DEL  |
+// |  BT 1   |   |     |   | HUEUP | SATUP | BRIUP | SPDUP |   |     |    |     |     |           |
+// |   BT 2   |    |      |    | HUEDN | SATDN | BRIDN | SPDDN |   |     |   |     |  EFFECT FORW |
+// |    BT 3     |     |      |      |     |     |     |     |     |     |  UP  |                 |
+// |   BT 4  |      |      |             TOG RGB                |   LT   |   DN   |  RT   |  DEL  |
 // ------------------------------------------------------------------------------------------------
 			bindings = <
 	&bt BT_CLR   &kp F1    &kp F2    &kp F3  &kp F4           &kp F5          &kp F6          &kp F7          &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &rgb_ug RGB_EFR
