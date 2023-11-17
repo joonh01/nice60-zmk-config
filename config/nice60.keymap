@@ -48,17 +48,6 @@
 	&bt BT_SEL 2    &trans    &trans    &trans   &trans          &trans          &trans          &trans          &trans   &trans    &kp UP                         &trans
 	&bt BT_SEL 3  &trans   &kp LALT                           &rgb_ug RGB_TOG                                     &kp LEFT     &kp DOWN     &kp RIGHT              &trans
 			>;
-		/**
- * Temporarily switches to a layer (`&mo`) while a modifier is held.
- * Analogous to QMK's `LM()`, using a parameterized macro.
- *
- * Params:
- *  1. Layer to switch to
- *  2. Modifier to press while layer is active
- *
- * Example:
- *  `&lm NUM_LAYER LSHIFT`
- */
 lm: lm {
     label = "LAYER_MOD";
     compatible = "zmk,behavior-macro-two-param";
@@ -75,7 +64,6 @@ lm: lm {
         , <&macro_release &kp MACRO_PLACEHOLDER>
         , <&macro_param_1to1>
         , <&macro_release &mo MACRO_PLACEHOLDER>
-        ;
-};
+        ;};
 	};
 };
