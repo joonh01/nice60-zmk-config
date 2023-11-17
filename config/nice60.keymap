@@ -13,11 +13,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-	keymap {
-#define default 0
-#define rgb   1
- */
-lm: lm {
+#define default_layer 0
+#define rgb_layer 1
+ lm {
     label = "LAYER_MOD";
     compatible = "zmk,behavior-macro-two-param";
     wait-ms = <0>;
@@ -34,6 +32,9 @@ lm: lm {
         , <&macro_param_1to1>
         , <&macro_release &mo MACRO_PLACEHOLDER>
         ;
+};
+
+	keymap {
 		compatible = "zmk,keymap";
 		
 		default_layer {
@@ -70,5 +71,4 @@ lm: lm {
 			>;
 		};
 	};
-};
 };
